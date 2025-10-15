@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 <ol>
                 <div class="corrosive-grid-container">
                     <div class="corrosive-card-modal">
-                        <img src="image/laboratory.jpg" alt="PPE">
+                        <img src="image/laboratory.jpg" alt="corrosive">
                         <p class="corrosive-title">หลักความปลอดภัยสำคัญ</p>
                          <li><strong>การเจือจาง:</strong> ให้เติม <strong>กรดลงในน้ำ</strong> เสมอ อย่างช้า ๆ.</li>
                          <li><strong>การถ่ายเท:</strong> ต้องทำใน <strong>ตู้ดูดควัน (Fume Hood)</strong> เท่านั้น.</li>
