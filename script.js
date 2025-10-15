@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 <ul>
                  <div class="ppe-grid-container">
                     <div class="ppe-card-modal">
-                        <img src="image/ppe.jpg" alt="PPE">
+                        <img src="image/PPE.jpg" alt="PPE">
                         <p class="ppe-title">Personal Protective Equipment(PPE)</p>
                          <p1><strong>1.เสื้อกาวน์</strong> </p1>
                          <p1><strong>2.ถุงมือ</strong></p1>
