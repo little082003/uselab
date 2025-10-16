@@ -103,12 +103,13 @@ h1 {
 
 .modal-body {
     padding-top: 10px;
-    max-height: 70vh; /* จำกัดความสูงของเนื้อหา */
-    overflow-y: auto; /* ถ้าเนื้อหายาวเกินให้มี scrollbar */
+    max-height: 70vh; /* จำกัดความสูงของเนื้อหาไม่ให้เกิน 70% ของความสูงหน้าจอ */
+    overflow-y: auto; /* สำคัญที่สุด: ถ้าเนื้อหาสูงเกิน ให้มี scrollbar แนวตั้ง */
+    -webkit-overflow-scrolling: touch; /* เพิ่ม: ทำให้การเลื่อนลื่นไหลบน iOS */
 }
 
 .close-btn {
-    position: absolute; /* จัดตำแหน่งให้แม่นยำ */
+    position: absolute;
     top: 10px;
     right: 15px;
     color: #aaa;
@@ -143,9 +144,9 @@ h1 {
 
 .modal-card img {
     width: 100%;
-    max-width: 150px; /* จำกัดขนาดรูปไม่ให้ใหญ่เกินไป */
+    max-width: 150px;
     height: auto;
-    aspect-ratio: 1 / 1; /* ทำให้รูปเป็นสี่เหลี่ยมจัตุรัส */
+    aspect-ratio: 1 / 1;
     object-fit: contain;
     margin-bottom: 10px;
 }

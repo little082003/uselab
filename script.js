@@ -82,20 +82,17 @@ document.addEventListener('DOMContentLoaded', () => {
             if (topicData) {
                 modalTitle.innerHTML = topicData.modalTitle;
                 modalBody.innerHTML = topicData.modalBody;
-                modal.classList.add('show'); // ใช้วิธีเพิ่ม Class
+                modal.classList.add('show');
             }
         });
     });
 
-    // ฟังก์ชันสำหรับปิด Modal
     const closeModal = () => {
-        modal.classList.remove('show'); // ใช้วิธีลบ Class
+        modal.classList.remove('show');
     }
 
-    // Event Listeners สำหรับปิด Modal
     closeBtn.addEventListener('click', closeModal);
     window.addEventListener('click', (event) => {
-        // ถ้าคลิกที่พื้นที่สีเทารอบๆ Modal ให้ปิด Modal
         if (event.target == modal) {
             closeModal();
         }
